@@ -20,36 +20,56 @@ var questions = [
 ]
 
 que = [
-"Question 1",
-"Question 2",
-"Question 3"
+	"Question 1",
+	"Question 2",
+	"Question 3"
 
 ];
 
 selection = [
-["A", "B", "Answer", "C"],
-["Answer", "A", "B", "C"],
-["A", "Answer", "B", "C"]
+	["A", "B", "Answer", "C"],
+	["Answer", "A", "B", "C"],
+	["A", "Answer", "B", "C"]
 
 ];
 
 correct = [
-selection[0][2],
-selection[1][0],
-selection[2][1]
+	selection[0][2],
+	selection[1][0],
+	selection[2][1]
 ];
 
 score = 0;
 right = 0;
 wrong = 0;
+q1 = 0;
+q0 = 89;
 
 $(document).ready(function() {
 
-	$('#startbutton').on('click', function() {
-		begin();
+	$('#finishbutton').on('click', function() {
+		console.log('working')
+		// begin();
 		// input class js-check
-		$('.js-check').on('click', function() {
-			var answerChosen = ($(this).attr('data-name'));
+		nine();
+
+		function nine() { $('#quiz input').on('change', function() {
+			q0 = $('input[name=q1]:checked', '#quiz').val();
+			})
+		};
+
+		q1 = $('.response input').on('change', function() {
+			$('input[value1=0]:checked', '.response').val();
+		})
+
+		var q2 = $('.response2').attr('value2'); 
+		var q3 = $('.response3').attr('value3'); 
+
+		console.log(q0);
+		// console.log(q2);
+		// console.log(q3);
+
+			var answerChosen = ($(this).attr('value'));
 			var correct = (questions[this.name].correctAnswer);
 			if (answerChosen === correct) {
 				alert("Correct");
@@ -61,12 +81,12 @@ $(document).ready(function() {
 				wrong++;
 				alert(wrong);
 			}
-		})
+		
 	})
 
-	// $('#startbutton').on('click',function() {
-	// 	begin();
-	// })
+	$('#startbutton').on('click',function() {
+		begin();
+	})
 
 	function begin() {
 		var questionString = '';
@@ -76,12 +96,11 @@ $(document).ready(function() {
 
 			questionString = '<div>' + questions[i].question + '</div>';
 
-			for(var a=0; a < questions[i].answer.length; a++) {
+			for(var a=0; a < questions[i].answers.length; a++) {
 
 			}
 
 			// $('#test').html(question[i].question)
-		}
 		}
 	}
 });

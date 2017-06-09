@@ -35,32 +35,77 @@
 
 			<div id="test"></div>
 				<div class="question">
+
+					<div>QUESTION 0</div>
+					<form id="quiz">
+						<input type="radio" name=q1 value1="0" /> Wrong
+						<br/>
+						<input type="radio" name=q1 value1="1" /> Correct
+						<br/>
+						<input type="radio" name=q1 value1="0" /> Wrong
+						<br/>
+						<input type="radio" name=q1 value1="0" /> Wrong
+
+					</form>
 				
 					<div>QUESTION 1</div>
-					<input class="response js-check" type="radio">0</input>
-					<input class="response js-check" type="radio">1</input>
-					<input class="response js-check" type="radio">2</input>
-					<input class="response js-check" type="radio">3</input>
+					<input class="response" id=q1 type="radio" name="selection" value1=0 >
+						<label>Wrong</label>
+					</input>
+					<br>
+					<input class="response" id=q1 type="radio" name="selection" value1=0>
+						<label>Wrong</label>
+					</input>
+					<br>
+					<input class="response" id=q1 type="radio" name="selection" value1=1>
+						<label>Correct</label>
+					</input>
+					<br>
+					<input class="response" id=q1 type="radio" name="selection" value1=0>
+						<label>Wrong</label>
+					</input>
 
 				</div>
 
 				<div class="question">
 				
 					<div>QUESTION 2</div>
-					<input class="response js-check" type="radio">0</input>
-					<input class="response js-check" type="radio">1</input>
-					<input class="response js-check" type="radio">2</input>
-					<input class="response js-check" type="radio">3</input>
+					<input class="response2" id=q2 type="radio" name="selection2" value2=1>
+						<label>Correct</label>
+					</input>
+					<br>
+					<input class="response2" id=q2 type="radio" name="selection2" value2=0>
+						<label>Wrong</label>
+					</input>
+					<br>
+					<input class="response2" id=q2 type="radio" name="selection2" value2=0>
+						<label>Wrong</label>
+					</input>
+					<br>
+					<input class="response2" id=q2 type="radio" name="selection2" value2=0>
+						<label>Wrong</label>
+					</input>
 
 				</div>
 
 				<div class="question">
 
 					<div>QUESTION 3</div>
-					<input class="response js-check" type="radio">0</input>
-					<input class="response js-check" type="radio">1</input>
-					<input class="response js-check" type="radio">2</input>
-					<input class="response js-check" type="radio">3</input>											
+					<input class="response3" id=q3 type="radio" name="selection3" value3=0>
+						<label>Wrong</label>
+					</input>
+					<br>
+					<input class="response3" id=q3 type="radio" name="selection3" value3=1>
+						<label>Correct</label>
+					</input>
+					<br>
+					<input class="response3" id=q3 type="radio" name="selection3" value3=0>
+						<label>Wrong</label>
+					</input>
+					<br>
+					<input class="response3" id=q3 type="radio" name="selection3" value3=0>
+						<label>Wrong</label>
+					</input>											
 
 				</div>
 
@@ -68,7 +113,7 @@
 			</div>
 
 			<div class="finish">
-				<button class="finishbutton">Submit</button>
+				<button id="finishbutton">Submit</button>
 			</div>
 
 		</div>

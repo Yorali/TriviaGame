@@ -3,6 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Trivia Game</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src=javascript/app.js></script>
 </head>
 <body>
 	<div class="wrapper">
@@ -15,7 +17,7 @@
 			</div>
 
 			<div class="start">
-				<button class="startbutton">ゲームスタート・Game start</button>
+				<button id="startbutton">ゲームスタート・Game start</button>
 			</div>
 
 		</div>
@@ -26,10 +28,43 @@
 				<p class="time"></p>
 			</div>
 
-			<div class="questions">
-				<p class="q1"></p>
-				<p class="q2"></p>
-				<p class="q3"></p>
+			<div id="test">
+				
+
+			</div>
+
+			<div id="test"></div>
+				<div class="question">
+				
+					<div>QUESTION 1</div>
+					<input class="response js-check" type="radio">0</input>
+					<input class="response js-check" type="radio">1</input>
+					<input class="response js-check" type="radio">2</input>
+					<input class="response js-check" type="radio">3</input>
+
+				</div>
+
+				<div class="question">
+				
+					<div>QUESTION 2</div>
+					<input class="response js-check" type="radio">0</input>
+					<input class="response js-check" type="radio">1</input>
+					<input class="response js-check" type="radio">2</input>
+					<input class="response js-check" type="radio">3</input>
+
+				</div>
+
+				<div class="question">
+
+					<div>QUESTION 3</div>
+					<input class="response js-check" type="radio">0</input>
+					<input class="response js-check" type="radio">1</input>
+					<input class="response js-check" type="radio">2</input>
+					<input class="response js-check" type="radio">3</input>											
+
+				</div>
+
+
 			</div>
 
 			<div class="finish">

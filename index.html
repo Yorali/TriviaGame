@@ -18,7 +18,7 @@
 			</div>
 
 			<div class="start">
-				<button id="startbutton">ゲームスタート・Game start</button>
+				<button id="startbutton" class="startbutton">ゲームスタート・Game start</button>
 			</div>
 
 		</div>
@@ -32,45 +32,45 @@
 			<div id="test">
 				<div class="question">
 
-					<div>QUESTION 1</div>
+					<div class="ask">パンダの好きな食べ物は何？</div>
 					<form id="quiz">
-						<input type="radio" name=q1 value="0" /> Wrong
+						<input type="radio" name=q1 value="0" class='ans' /> 竹
 						<br/>
-						<input type="radio" name=q1 value="1" /> Correct
+						<input type="radio" name=q1 value="1" class='ans' /> パンだ
 						<br/>
-						<input type="radio" name=q1 value="0" /> Wrong
+						<input type="radio" name=q1 value="0" class='ans' /> アイス
 						<br/>
-						<input type="radio" name=q1 value="0" /> Wrong
+						<input type="radio" name=q1 value="0" class='ans' /> ステーキ
 
 					</form>
 
 
-					<div>QUESTION 2</div>
+					<div class="ask">感情的にならないようにどうしたら良い？</div>
 					<form id="quiz">
-						<input type="radio" name=q1 value="0" /> Wrong
+						<input type="radio" name=q1 value="0" class='ans' /> 何かを殴る
 						<br/>
-						<input type="radio" name=q1 value="1" /> Correct
+						<input type="radio" name=q1 value="1" class='ans' /> 状況をちゃんと分かるようになる
 						<br/>
-						<input type="radio" name=q1 value="0" /> Wrong
+						<input type="radio" name=q1 value="0" class='ans' /> 誰かを殴る
 						<br/>
-						<input type="radio" name=q1 value="0" /> Wrong
+						<input type="radio" name=q1 value="0" class='ans' /> 悲鳴する
 
 					</form>
 
-					<div>QUESTION 3</div>
+					<div class="ask">＿＿的な雰囲気から逃げられない</div>
 					<form id="quiz">
-						<input type="radio" name=q1 value="0" /> Wrong
+						<input type="radio" name=q1 value="0" class='ans' /> 愛情
 						<br/>
-						<input type="radio" name=q1 value="1" /> Correct
+						<input type="radio" name=q1 value="1" class='ans' /> 絶望
 						<br/>
-						<input type="radio" name=q1 value="0" /> Wrong
+						<input type="radio" name=q1 value="0" class='ans' /> 興奮
 						<br/>
-						<input type="radio" name=q1 value="0" /> Wrong
+						<input type="radio" name=q1 value="0" class='ans' /> 情熱
 
 					</form>
 
 					<div class="finish">
-						<button id="finishbutton">Submit</button>
+						<button id="finishbutton" class="finishbutton">Submit</button>
 					</div>				
 
 				</div>
@@ -79,13 +79,12 @@
 
 		</div>
 
-		<div class="statspage">
+		<div id='statspage' class="statspage">
 
 			<div class="resultspage">
 				<div class="results">
-					<p class="stats"></p>
-					<p class="stats"></p>
-					<p class="stats"></p>
+					<p id='numcorrect'></p>
+					<p id='numwrong'></p>
 				</div>
 			</div>
 

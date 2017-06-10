@@ -13,7 +13,35 @@ body {
 	background-color: pink;
 }
 
+.startbutton {
+	width: 70%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
 .questpage {
 	background-color: magenta;
 	visibility: hidden;
+}
+
+.ask {
+	padding: 10px;
+	size: 18px;
+}
+
+.ans {
+	padding: 5px;
+}
+
+.finish {
+	padding-top: 20px;
+}
+
+.finishbutton {
+	width: 70%;
+}
+
+.statspage {
+	visibility: hidden;
+	size: 24px;
 }

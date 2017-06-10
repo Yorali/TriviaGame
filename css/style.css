@@ -1,0 +1,19 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	text-align: center;
+	width: 70%;
+	margin: 0 auto;
+	background-color: aliceblue;
+}
+
+.title {
+	background-color: pink;
+}
+
+.questpage {
+	background-color: magenta;
+	visibility: hidden;
+}

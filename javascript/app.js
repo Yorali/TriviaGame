@@ -42,65 +42,43 @@ correct = [
 score = 0;
 right = 0;
 wrong = 0;
-q1 = 0;
-q0 = 89;
 
 $(document).ready(function() {
 
+	$("input[value='1']").change(function() {
+		right++;
+	});
+
+	$("input[value='0']").change(function() {
+		wrong++;
+	});	
+
 	$('#finishbutton').on('click', function() {
-		console.log('working')
-		// begin();
-		// input class js-check
-		nine();
-
-		function nine() { $('#quiz input').on('change', function() {
-			q0 = $('input[name=q1]:checked', '#quiz').val();
-			})
-		};
-
-		q1 = $('.response input').on('change', function() {
-			$('input[value1=0]:checked', '.response').val();
-		})
-
-		var q2 = $('.response2').attr('value2'); 
-		var q3 = $('.response3').attr('value3'); 
-
-		console.log(q0);
-		// console.log(q2);
-		// console.log(q3);
-
-			var answerChosen = ($(this).attr('value'));
-			var correct = (questions[this.name].correctAnswer);
-			if (answerChosen === correct) {
-				alert("Correct");
-				right++;
-				alert(correct);
-			} 
-			else {
-				alert("Incorrect")
-				wrong++;
-				alert(wrong);
-			}
-		
-	})
+		console.log('Number correct: ' + right);
+		console.log('Number incorrect: ' + wrong);
+	});
 
 	$('#startbutton').on('click',function() {
 		begin();
-	})
+	});
 
 	function begin() {
-		var questionString = '';
-		for (var i = 0; i<questions.length; i++) {
+		document.getElementById("visibi").style.visibility = 'visible';
 
-			var answerString = '';
+		var time = 60;
+		var countdown = setInterval(timer, 1000) 
+		function timer() {
+			time = time-1;
+			if (time <= 0) {
+				clearInterval(countdown);
+				$('.timer').html('Game Over');
+				document.getElementById("visibi").style.visibility = 'hidden';
+			};
+			$('.timer').html('Time left: ' + time + ' seconds');
+		};
 
-			questionString = '<div>' + questions[i].question + '</div>';
 
-			for(var a=0; a < questions[i].answers.length; a++) {
+		
+	};
 
-			}
-
-			// $('#test').html(question[i].question)
-		}
-	}
 });

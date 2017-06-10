@@ -5,6 +5,7 @@
 	<title>Trivia Game</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="text/javascript" src=javascript/app.js></script>
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<div class="wrapper">
@@ -22,99 +23,59 @@
 
 		</div>
 
-		<div class="questpage">
+		<div class="questpage" id="visibi">
 
-			<div class="timer">
-				<p class="time"></p>
+			<div class="timer" data-seconds-left=60>
+				<p class="time">Time Left: </p>
 			</div>
 
 			<div id="test">
-				
-
-			</div>
-
-			<div id="test"></div>
 				<div class="question">
 
-					<div>QUESTION 0</div>
+					<div>QUESTION 1</div>
 					<form id="quiz">
-						<input type="radio" name=q1 value1="0" /> Wrong
+						<input type="radio" name=q1 value="0" /> Wrong
 						<br/>
-						<input type="radio" name=q1 value1="1" /> Correct
+						<input type="radio" name=q1 value="1" /> Correct
 						<br/>
-						<input type="radio" name=q1 value1="0" /> Wrong
+						<input type="radio" name=q1 value="0" /> Wrong
 						<br/>
-						<input type="radio" name=q1 value1="0" /> Wrong
+						<input type="radio" name=q1 value="0" /> Wrong
 
 					</form>
-				
-					<div>QUESTION 1</div>
-					<input class="response" id=q1 type="radio" name="selection" value1=0 >
-						<label>Wrong</label>
-					</input>
-					<br>
-					<input class="response" id=q1 type="radio" name="selection" value1=0>
-						<label>Wrong</label>
-					</input>
-					<br>
-					<input class="response" id=q1 type="radio" name="selection" value1=1>
-						<label>Correct</label>
-					</input>
-					<br>
-					<input class="response" id=q1 type="radio" name="selection" value1=0>
-						<label>Wrong</label>
-					</input>
 
-				</div>
 
-				<div class="question">
-				
 					<div>QUESTION 2</div>
-					<input class="response2" id=q2 type="radio" name="selection2" value2=1>
-						<label>Correct</label>
-					</input>
-					<br>
-					<input class="response2" id=q2 type="radio" name="selection2" value2=0>
-						<label>Wrong</label>
-					</input>
-					<br>
-					<input class="response2" id=q2 type="radio" name="selection2" value2=0>
-						<label>Wrong</label>
-					</input>
-					<br>
-					<input class="response2" id=q2 type="radio" name="selection2" value2=0>
-						<label>Wrong</label>
-					</input>
+					<form id="quiz">
+						<input type="radio" name=q1 value="0" /> Wrong
+						<br/>
+						<input type="radio" name=q1 value="1" /> Correct
+						<br/>
+						<input type="radio" name=q1 value="0" /> Wrong
+						<br/>
+						<input type="radio" name=q1 value="0" /> Wrong
 
-				</div>
-
-				<div class="question">
+					</form>
 
 					<div>QUESTION 3</div>
-					<input class="response3" id=q3 type="radio" name="selection3" value3=0>
-						<label>Wrong</label>
-					</input>
-					<br>
-					<input class="response3" id=q3 type="radio" name="selection3" value3=1>
-						<label>Correct</label>
-					</input>
-					<br>
-					<input class="response3" id=q3 type="radio" name="selection3" value3=0>
-						<label>Wrong</label>
-					</input>
-					<br>
-					<input class="response3" id=q3 type="radio" name="selection3" value3=0>
-						<label>Wrong</label>
-					</input>											
+					<form id="quiz">
+						<input type="radio" name=q1 value="0" /> Wrong
+						<br/>
+						<input type="radio" name=q1 value="1" /> Correct
+						<br/>
+						<input type="radio" name=q1 value="0" /> Wrong
+						<br/>
+						<input type="radio" name=q1 value="0" /> Wrong
+
+					</form>
+
+					<div class="finish">
+						<button id="finishbutton">Submit</button>
+					</div>				
 
 				</div>
-
-
 			</div>
 
-			<div class="finish">
-				<button id="finishbutton">Submit</button>
-			</div>
 
 		</div>
 
